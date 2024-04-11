@@ -21,6 +21,6 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 |qty             | quantity of product                       | INT             |
 | Amount         | Amount of sale                            | FLOAT           |
 | B2B            | Business to business sales                |  BOOLEAN        |
-|ship_city       |                                           |   VARCHAR(30)   |
-|ship_state      |                                           | VARCHAR(30)     |
-|zipcode         |                                           |  VARCHAR( 10)   |
+|ship_city       | City  order is  shipped to                |   VARCHAR(30)   |
+|ship_state      | State order is  shipped to                | VARCHAR(30)     |
+|zipcode         | Zipcode  order is  shipped to             |  VARCHAR( 10)   |
