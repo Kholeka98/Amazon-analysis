@@ -32,17 +32,15 @@ To enhance data organization and facilitate analysis, the Amazon online sales da
 
  **Sales Information Table**:
 This table serves as the sales-related data, with each row representing a unique order.
-It includes essential details such as the order date, sales channel, B2B status, quantity, amount.
+It includes details such as the order date, sales channel, B2B status, quantity, amount.
 
  **Shipping Details Table**:
-This table focuses specifically on shipping-related information, providing insights into the delivery process.
-The order_id from the Order Information Table serves as a foreign key, linking each shipping record to its corresponding order.
+This table contain shipping-related information, providing insights into the delivery process.
 It contains data such as the shipping city, shipping state, and zipcode, aiding in geographical analysis and logistics optimization.
 
  **Product Details Table**:
-Designed to capture product-related information, this table allows for analysis of sales performance at the product level.
-Similar to the Shipping Details Table, the order_id acts as a foreign key, establishing the relationship between orders and the products they contain.
-Key attributes such as product category, size, and fulfillment method (e.g., Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
+This table allows for analysis of sales performance at the product level.
+Key attributes such as product category, size, and fulfillment method (e.g Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
 
 
 2. **Feature Engineering on MySQL**
@@ -62,7 +60,7 @@ Key attributes such as product category, size, and fulfillment method (e.g., Ama
  -  Are there any correlations between product size and revenue?
 
 ### Sales Analysis 
-- Which sales channels (e.g., Amazon, merchant) bring in the most revenue?
+- Which sales channels bring in the most revenue?
 - Is there a significant difference in revenue between B2B and B2C sales?
 - Are there any trends or patterns in order quantity over time?
 - How has revenue changed over time?
