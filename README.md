@@ -39,8 +39,8 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 
     - **Product Details Table**: This table allows for analysis of sales performance at the product level. Key attributes such as product category, size, and fulfillment method (e.g Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
 - Restricting the analysis to the year 2022 only, records from other dates were filtered out using Excel.
-- Build a database.
-- Define `amazon_sales`, `amazon_product`, `amazon_shipping` table  and import NOT NULL data into the tables.
+- Build an `amazon_online_sales` database.
+- Define `amazon_sales`, `amazon_product`, `amazon_shipping` tables  and import NOT NULL data into the tables.
   
 ### Feature Engineering
 - Add a new column named ` revenue ` calculated as the product of quantity and price.
