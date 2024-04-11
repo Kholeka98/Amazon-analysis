@@ -38,7 +38,6 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
   state, and zipcode, aiding in geographical analysis and logistics optimization.
 
     - **Product Details Table**: This table allows for analysis of sales performance at the product level. Key attributes such as product category, size, and fulfillment method (e.g Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
-- Restricting the analysis to the year 2022 only, records from other dates were filtered out using Excel.
 - Build an `amazon_online_sales` database.
 - Define `amazon_sales`, `amazon_product`, `amazon_shipping` tables  and import NOT NULL data into the tables.
   
