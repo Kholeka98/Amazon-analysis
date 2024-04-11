@@ -26,7 +26,7 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 |zipcode         | Zipcode  order is  shipped to             |  VARCHAR( 10)   |
 
 
-## Strategy 
+## Approach Taken 
 1. ### Dataset Prepation
 To enhance data organization and facilitate analysis, the Amazon online sales data was separated into three distinct tables, ensuring that the `order_id` serves as the primary key across all tables:
 
@@ -42,9 +42,8 @@ It contains data such as the shipping city, shipping state, and zipcode, aiding 
 This table allows for analysis of sales performance at the product level.
 Key attributes such as product category, size, and fulfillment method (e.g Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
 
-
-2. **Feature Engineering on MySQL**
-     - Add a new column named ` day_of_week ` which extracts the day of the week from the date field.
+2. **Feature Engineering**
+     - Add a new column named ` revenue ` using the metric Revenue = quantity * Price.
      - Add a new column named ` month_name ` which extracts the month of the week from the date field.
      - Add a new column named ` year ` which extracts the year from the date field.
      - Add a new column named `total_quantity` that computes the total quantity sold for each record, aggregating the quantities of all products.
