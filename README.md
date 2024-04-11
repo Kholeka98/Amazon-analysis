@@ -44,10 +44,6 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
   
 3. ### Feature Engineering
      - Add a new column named ` revenue ` using the metric Revenue = Quantity * Price.
-     
-     - Add a new column named ` year ` which extracts the year from the date field.
-     - Add a new column named `total_quantity` that computes the total quantity sold for each record, aggregating the quantities of all products.
-     - Add a new column named `total_revenue` that computes the total revenue generated for each record, aggregating the revenue of all products.
    
 ## Business Questions to answer
 ### Product Analysis 
