@@ -67,3 +67,5 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
  - Which cities/states have the highest number of orders?
  - Is there any correlation between shipping location and order value?
  - What percentage of orders use different shipping services?
+
+We'll use SQL to get the necessary data for each question, then transfer it to Tableau for visualization.
