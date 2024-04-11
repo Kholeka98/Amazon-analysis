@@ -30,17 +30,14 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 1. ### Dataset Prepation
 - To enhance data organization and facilitate analysis, the Amazon online sales data was separated into three distinct tables, ensuring that the `order_id` serves as the primary key across all tables:
 
- **Sales Information Table**:
-This table serves as the sales-related data, with each row representing a unique order.
-It includes details such as the order date, sales channel, B2B status, quantity, amount.
+    - **Sales Information Table**:This table serves as the sales-related data, with each row representing a unique order.It includes details such as the order date, sales channel, B2B 
+     status, quantity, amount.
 
- **Shipping Details Table**:
-This table contain shipping-related information, providing insights into the delivery process.
-It contains data such as the shipping city, shipping state, and zipcode, aiding in geographical analysis and logistics optimization.
+    - **Shipping Details Table**: This table contain shipping-related information, providing 
+  insights into the delivery process. It contains data such as the shipping city, shipping 
+  state, and zipcode, aiding in geographical analysis and logistics optimization.
 
- **Product Details Table**:
-This table allows for analysis of sales performance at the product level.
-Key attributes such as product category, size, and fulfillment method (e.g Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
+    - **Product Details Table**: This table allows for analysis of sales performance at the product level. Key attributes such as product category, size, and fulfillment method (e.g Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
 
 - Build a database.
 - Define a table  and import NOT NULL data into the table.
