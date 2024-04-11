@@ -41,21 +41,20 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
    
 ## Business Questions to answer
 ### Product Analysis 
- 1. What are the top 10 best-selling products overall?
- 2. Can you identify any seasonal trends in the sales of specific products?
- 3. Which product categories generate the highest revenue?
- 4. Are there any product categories that are consistently underperforming?
- 5. Do certain product sizes sell better than others?
- 6. Are there any correlations between product size and revenue?
+ - What are the top 10 best-selling products overall?
+ - Can you identify any seasonal trends in the sales of specific products?
+ -  Which product categories generate the highest revenue?
+ - Are there any product categories that are consistently underperforming?
+ - Do certain product sizes sell better than others?
+ -  Are there any correlations between product size and revenue?
 
 ### Sales Analysis 
-
- 1. Which sales channels (e.g., Amazon, merchant) bring in the most revenue?
- 2. Is there a significant difference in revenue between B2B and B2C sales?
- 3. Are there any trends or patterns in order quantity over time?
- 4. How has revenue changed over time?
+- Which sales channels (e.g., Amazon, merchant) bring in the most revenue?
+- Is there a significant difference in revenue between B2B and B2C sales?
+- Are there any trends or patterns in order quantity over time?
+- How has revenue changed over time?
 
 ### Shipping Analysis 
- 1. Which cities/states have the highest number of orders?
- 2. Is there any correlation between shipping location and order value?
- 3. What percentage of orders use different shipping services?
+ - Which cities/states have the highest number of orders?
+ - Is there any correlation between shipping location and order value?
+ - What percentage of orders use different shipping services?
