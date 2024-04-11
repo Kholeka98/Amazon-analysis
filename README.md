@@ -38,13 +38,16 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
   state, and zipcode, aiding in geographical analysis and logistics optimization.
 
     - **Product Details Table**: This table allows for analysis of sales performance at the product level. Key attributes such as product category, size, and fulfillment method (e.g Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
-
+- Restricting the analysis to the year 2022 only, records from other dates were filtered out using Excel.
 - Build a database.
 - Define a table  and import NOT NULL data into the table.
   
 ### Feature Engineering
 - Add a new column named ` revenue ` calculated as the product of quantity and price.
-   
+- Add a new column named ` month_name ` which extracts the month of the week from the date field.
+- Add a new column named ` year ` which extracts the year from the date field.
+
+
 ## Business Questions to answer
 ### Product Analysis 
  - What are the top 10 best-selling products overall?
