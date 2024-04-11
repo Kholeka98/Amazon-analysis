@@ -27,7 +27,7 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 
 
 ## Approach Taken 
-1. ### Dataset Preparation
+### Dataset Preparation
 - To enhance data organization and facilitate analysis, the Amazon online sales data was separated into three distinct tables, ensuring that the `order_id` serves as the primary key across all tables:
 
     - **Sales Information Table**: This table serves as the sales-related data, with each row representing a unique order.It includes details such as the order date, sales channel, B2B 
@@ -42,8 +42,8 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 - Build a database.
 - Define a table  and import NOT NULL data into the table.
   
-3. ### Feature Engineering
-     - Add a new column named ` revenue ` using the metric Revenue = Quantity * Price.
+### Feature Engineering
+- Add a new column named ` revenue ` calculated as the product of quantity and price.
    
 ## Business Questions to answer
 ### Product Analysis 
