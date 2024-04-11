@@ -27,17 +27,19 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 
 
 ## Strategy 
-1. **Dataset Prepation**
+1. ### Dataset Prepation
 To enhance data organization and facilitate analysis, the Amazon online sales data was separated into three distinct tables, ensuring that the `order_id` serves as the primary key across all tables:
 
-> Sales Information Table:
+ **Sales Information Table**:
 This table serves as the sales-related data, with each row representing a unique order.
 It includes essential details such as the order date, sales channel, B2B status, quantity, amount.
-> Shipping Details Table:
+
+ **Shipping Details Table**:
 This table focuses specifically on shipping-related information, providing insights into the delivery process.
 The order_id from the Order Information Table serves as a foreign key, linking each shipping record to its corresponding order.
 It contains data such as the shipping city, shipping state, and zipcode, aiding in geographical analysis and logistics optimization.
-> Product Details Table:
+
+ **Product Details Table**:
 Designed to capture product-related information, this table allows for analysis of sales performance at the product level.
 Similar to the Shipping Details Table, the order_id acts as a foreign key, establishing the relationship between orders and the products they contain.
 Key attributes such as product category, size, and fulfillment method (e.g., Amazon or merchant) are stored, enabling insights into product popularity and fulfillment preferences.
