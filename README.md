@@ -27,10 +27,10 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 
 
 ## Approach Taken 
-1. ### Dataset Prepation
+1. ### Dataset Preparation
 - To enhance data organization and facilitate analysis, the Amazon online sales data was separated into three distinct tables, ensuring that the `order_id` serves as the primary key across all tables:
 
-    - **Sales Information Table**:This table serves as the sales-related data, with each row representing a unique order.It includes details such as the order date, sales channel, B2B 
+    - **Sales Information Table**: This table serves as the sales-related data, with each row representing a unique order.It includes details such as the order date, sales channel, B2B 
      status, quantity, amount.
 
     - **Shipping Details Table**: This table contain shipping-related information, providing 
