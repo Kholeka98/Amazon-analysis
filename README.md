@@ -70,3 +70,44 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
  - What percentage of orders use different shipping services?
 
 We'll use SQL to get the necessary data for each question, then transfer it to Tableau for visualization.
+
+## Code
+I have attached a file named [Amazon Project]() containing the rest of the code.
+
+
+```sql
+-- Create database 
+CREATE DATABASE IF NOT EXISTS amazon_online_sales;
+
+
+-- Create amazon_sales table
+CREATE TABLE IF NOT EXISTS amazon_sales (
+    Order_id VARCHAR(30) NOT NULL PRIMARY KEY,
+    date DATETIME NOT NULL,
+    quantity INT NOT NULL,
+    amount FLOAT NOT NULL,
+    sales_channel VARCHAR(50) NOT NULL,
+    B2B BOOLEAN NOT NULL
+);
+
+-- Create second table of the database
+CREATE TABLE IF NOT EXISTS amazon_product (
+    Order_id VARCHAR(30) NOT NULL PRIMARY KEY,
+    category VARCHAR(30) NOT NULL,
+    size VARCHAR(30) NOT NULL,
+    style VARCHAR(30) NOT NULL,
+    fulfilment VARCHAR(30) NOT NULL,
+    asin VARCHAR(30) NOT NULL
+);
+
+-- Create third table of the database
+CREATE TABLE IF NOT EXISTS amazon_shipping (
+    Order_id VARCHAR(20) NOT NULL PRIMARY KEY,
+    order_status VARCHAR(200) NOT NULL,
+    ship_service VARCHAR(200) NOT NULL,
+    ship_city VARCHAR(200) NOT NULL,
+    ship_state VARCHAR(200) NOT NULL,
+    zipcode VARCHAR(30) NOT NULL
+);
+
+```
