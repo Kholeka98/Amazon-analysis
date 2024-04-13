@@ -26,7 +26,7 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 |zipcode         | Zipcode  order is  shipped to             |  VARCHAR( 10)   |
 
 ### Description of datasets uploaded
-- `SQL amazon_sales`, `SQL amazon_product`, and `SQL amazon_shipping` are the datasets SQL imported.
+- `SQL amazon_sales`, `SQL amazon_product`, and `SQL amazon_shipping` are the datasets SQL imported. We will use these datasets to answer business questions.
 
 
 ## Approach Taken 
