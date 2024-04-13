@@ -31,7 +31,7 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 
 ## Approach Taken 
 ### Dataset Preparation
--To avoid data loss, we performed data cleaning in Excel prior to importing the dataset into SQL.
+- To avoid data loss, we performed data cleaning in Excel prior to importing the dataset into SQL.
 - To enhance data organization and facilitate analysis, the Amazon online sales data was separated into three  tables, ensuring that the `order_id` serves as the primary key across all tables:
 
     - **Sales Information Table**: This table serves as the sales-related data, with each row representing a unique order.It includes details such as the order date, sales channel, B2B 
