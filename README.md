@@ -72,7 +72,7 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 We'll use SQL to get the necessary data for each question, then transfer it to Tableau for visualization.
 
 ## Code
-I have attached a file named [Amazon Project]() containing the rest of the code.
+I have attached a file named [Amazon Project](https://github.com/Kholeka98/Amazon-analysis/blob/main/Amazon%20Project.sql) containing the rest of the code.
 
 
 ```sql
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS amazon_sales (
     B2B BOOLEAN NOT NULL
 );
 
--- Create second table of the database
+-- Create amazon_product table
 CREATE TABLE IF NOT EXISTS amazon_product (
     Order_id VARCHAR(30) NOT NULL PRIMARY KEY,
     category VARCHAR(30) NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS amazon_product (
     asin VARCHAR(30) NOT NULL
 );
 
--- Create third table of the database
+-- Create amazon_shipping table
 CREATE TABLE IF NOT EXISTS amazon_shipping (
     Order_id VARCHAR(20) NOT NULL PRIMARY KEY,
     order_status VARCHAR(200) NOT NULL,
@@ -111,3 +111,5 @@ CREATE TABLE IF NOT EXISTS amazon_shipping (
 );
 
 ```
+
+## Dashboard
