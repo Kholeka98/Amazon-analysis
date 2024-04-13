@@ -25,6 +25,10 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 |ship_state      | State order is  shipped to                | VARCHAR(30)     |
 |zipcode         | Zipcode  order is  shipped to             |  VARCHAR( 10)   |
 
+### Description of datasets uploaded
+- `Amazon Sale Report` is the dataset from Kaggle.
+- `SQL amazon_sales`, `SQL amazon_product`, and `SQL amazon_shipping` are the datasets SQL imported.
+
 
 ## Approach Taken 
 ### Dataset Preparation
