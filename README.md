@@ -1,7 +1,9 @@
-#  Amazon Online Sales Analysis Dashboard
-
+#  Amazon Online Sales Analysis 
 ## Project Objective 
-The objective of this project is to use SQL to retrive relevant data tables from a database, extract the data and develop a comprehensive dashboard that provides insights into various aspects of Amazon sales data. The dashboard will include visualizations and interactive features to allow users to explore sales, product, and shipping data effectively.
+In this project, the focus is on conducting a thorough analysis of an Amazon online sales dataset using SQL queries. The dataset contains information on sales, products, and shipping. The primary goal is to extract valuable insights, identify patterns, and uncover trends within the dataset. This analysis aims to provide a comprehensive understanding of the Amazon sales data, enabling stakeholders to make informed decisions based on the findings.
+
+By utilizing SQL's querying capabilities, the project aims to delve deep into the data, exploring various aspects such as sales trends over time, popular products, geographical sales distribution, shipping patterns, and customer behavior. The insights gained from this analysis can be used to optimize sales strategies, improve inventory management, enhance customer experience, and drive business growth.
+
 
 ## About Data 
 The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data). This is a dataset that contain information about  Amazon online sales.
@@ -72,8 +74,6 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
  - Which cities/states have the highest number of orders?
  - What percentage of orders use different shipping services?
 
-We'll use SQL to get the necessary data for each question, then transfer it to Tableau for visualization.
-
 ## Code
 I have attached a file named [Amazon Project](https://github.com/Kholeka98/Amazon-analysis/blob/main/Amazon%20Project.sql) containing the rest of the code.
 
@@ -115,4 +115,4 @@ CREATE TABLE IF NOT EXISTS amazon_shipping (
 
 ```
 
-## Dashboard
+## Results
