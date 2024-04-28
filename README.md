@@ -52,7 +52,8 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 
 
 ## Business Questions to answer
-### Product Analysis 
+### Product Analysis
+ - What is the total revenue, total quantify sold, and average revenue?
  - What are the top 5 best-selling products overall?
  - Can you identify any trends in the sales of products?
  -  Which product categories generate the highest revenue?
