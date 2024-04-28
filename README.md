@@ -27,11 +27,8 @@ The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/thedevast
 |ship_state      | State order is  shipped to                | VARCHAR(30)     |
 |zipcode         | Zipcode  order is  shipped to             |  VARCHAR( 10)   |
 
-### Description of datasets uploaded
-- `SQL amazon_sales`, `SQL amazon_product`, and `SQL amazon_shipping` are the datasets SQL imported. We will use these datasets to answer business questions.
 
-
-## Approach Taken 
+## Strategy
 ### Dataset Preparation
 - To avoid data loss, we performed data cleaning in Excel prior to importing the dataset into SQL.
 - To enhance data organization and facilitate analysis, the Amazon online sales data was separated into three  tables, ensuring that the `order_id` serves as the primary key across all tables:
@@ -115,4 +112,31 @@ CREATE TABLE IF NOT EXISTS amazon_shipping (
 
 ```
 
-## Results
+## Summary of  Results
+### Key Performance Indicators
+- Total Revenue: ₹70,981,787
+- Total Quantity Sold: 108,652
+- Average Revenue : ₹655.49
+  
+### Top Selling Product Categories:
+| Category         |Total Quantity|  Total Revenue(₹) |
+|------------------|:-------------|:---------------|
+| Sets             |42440         | 35 522 629     |
+| Kurta            | 41367        | 19 021 020     |
+| Western Dress    | 13219        | 10 136 839     |
+| Top              | 9335         | 4 929 480      |
+| Ethnic Dress     |  982         | 706 521        |
+
+### Insights   
+- Sets consistently perform well, generating the highest revenue over the four-month period.
+- Dupatta consistently underperforms, with revenue below the average.
+- Distribution between Amazon and Merchant:
+     - Amazon: 72.34%
+     - Merchant: 27.66%
+     - 
+### Revenue Breakdown
+- Business to Customer (B2C) Revenue: ₹70,413,194
+- Business to Business (B2B) Revenue: ₹568684
+Expressing as a Percentage of Total Revenue:
+    - B2C Revenue: 99.20%
+    - B2B Revenue: 0.80%
