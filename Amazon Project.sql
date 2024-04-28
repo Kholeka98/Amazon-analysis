@@ -1,4 +1,4 @@
--- Create database
+-- Create database 
 CREATE DATABASE IF NOT EXISTS amazon_online_sales;
 
 
@@ -55,19 +55,33 @@ UPDATE amazon_sales
 SET calendar_month = MONTHNAME(date);
 
 -- ----------------------------- Product Analysis-------------------------------------------
-
--- 1. What are the top 5 best-selling product categories overall?
+-- 1. What is the total revenue, total quantify sold, and average revenue?
 SELECT 
-    p.category, SUM(s.quantity) AS total_sold
+    SUM(s.revenue) AS Total_Revenue,
+    SUM(s.quantity) AS Total_Quantity,
+    AVG(s.revenue) AS Average_Revenue
 FROM
     amazon_online_sales.amazon_sales s
         JOIN
     amazon_online_sales.amazon_product p ON s.Order_id = p.Order_id
-GROUP BY p.category
-ORDER BY total_sold DESC
-LIMIT 5;
+        JOIN
+    amazon_online_sales.amazon_shipping d ON s.Order_id = d.Order_id;
 
--- 2. Can you identify any trends in the sales of products?
+
+-- 2. What are the top 5 best-selling product categories overall?
+SELECT 
+    p.category, SUM(s.quantity) AS total_sold, sum(s.revenue)
+
+FROM
+    amazon_online_sales.amazon_sales s
+        JOIN
+        
+        
+    amazon_online_sales.amazon_product p ON s.Order_id = p.Order_id
+GROUP BY p.category
+ORDER BY total_sold DESC;
+
+-- 3. Can you identify any trends in the sales of products?
 SELECT 
     s.calendar_month, p.category, SUM(s.quantity) AS total_sold
 FROM
@@ -77,7 +91,7 @@ FROM
 GROUP BY p.category , s.calendar_month
 ORDER BY p.category , total_sold DESC;
 
--- 3. Which product categories generate the highest revenue?
+-- 4. Which product categories generate the highest revenue?
 
 SELECT 
     p.category, SUM(s.revenue) AS total_revenue
@@ -88,8 +102,8 @@ FROM
 GROUP BY p.category
 ORDER BY total_revenue DESC;
 
--- 4. Are there any product categories that are consistently underperforming?
--- total_revenue below average revenue is the metric we will use to measure performance.
+-- 5. Are there any product categories that are consistently underperforming?
+-- total_revenue below average revenue is the metric we will use to measure under performance.
 SELECT 
     s.calendar_month, p.category, SUM(s.revenue) AS total_revenue
 FROM
@@ -124,7 +138,7 @@ ORDER BY CASE s.calendar_month
 END;
 
 
--- 5. Do certain product sizes sell better than others?
+-- 6. Do certain product sizes sell better than others?
 
 SELECT 
     p.size, SUM(s.quantity) AS total_sold
@@ -135,7 +149,7 @@ FROM
 GROUP BY p.size
 ORDER BY total_sold DESC;
 
--- 6. Are there any correlations between product size and revenue?
+-- 7. Are there any correlations between product size and revenue?
 
 SELECT 
     p.size, SUM(s.revenue) AS total_revenue
@@ -146,7 +160,7 @@ FROM
 GROUP BY p.size
 ORDER BY total_revenue DESC;
 
--- 7. Which is the most prefered fulfilment?
+-- 8. Which is the most prefered fulfilment?
 
 SELECT 
     p.fulfilment,
