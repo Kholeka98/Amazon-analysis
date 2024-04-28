@@ -133,7 +133,7 @@ CREATE TABLE IF NOT EXISTS amazon_shipping (
 - Distribution between Amazon and Merchant:
      - Amazon: 72.34%
      - Merchant: 27.66%
-     - 
+      
 ### Revenue Breakdown
 - Business to Customer (B2C) Revenue: ₹70,413,194
 - Business to Business (B2B) Revenue: ₹568684
